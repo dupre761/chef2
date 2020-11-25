@@ -1,22 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import MenuSemaine from './component/menuSemaine'
+import Jour from'./component/jour.js'
+import Aliment from './component/aliment.js'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <MenuSemaine title="Menu de la semaine"/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <Jour />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      
+        
       </header>
     </div>
   );
